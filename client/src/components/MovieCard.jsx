@@ -3,6 +3,7 @@ import { Box, Button, Image, Text, Flex } from "@chakra-ui/react";
 import { Link } from 'react-router-dom';
 
 export default function MovieCard({ movies, handleDelete }) {
+    
     return (
         <>
             {
@@ -13,7 +14,7 @@ export default function MovieCard({ movies, handleDelete }) {
                         borderRadius="lg"
                         overflow="hidden"
                         boxShadow="md"
-                        w={'20%'}
+                        w={'30%'}
                         key={movie._id}
                         _hover={{ boxShadow: "2xl" }}
 
