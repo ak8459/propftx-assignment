@@ -82,30 +82,33 @@ const Home = () => {
 
   return (
     <Box overflowX="auto">
-      <Box >
-        <Select
-          onChange={(e) => setOrder(e.target.value)}
-          value={order}
-          width={["100%", "100%", "300px"]}
+      <Center>
 
-          marginBottom={"10px"}
-          padding={"5px"}
-          // borderRadius={"1rem"}
-          // outline={"none"}
-          cursor={"pointer"}
-        >
-          <option value="" style={{ color: "gray" }}>
-            See by year
-          </option>
-          <option value="desc" style={{ color: "black" }}>
-            New to old
-          </option>
-          <option value="asc" style={{ color: "black" }}>
-            Old to new
-          </option>
-        </Select>
-      </Box>
 
+        <Box >
+          <Select
+            onChange={(e) => setOrder(e.target.value)}
+            value={order}
+            width={["100%", "100%", "300px"]}
+
+            marginBottom={"10px"}
+            padding={"5px"}
+            // borderRadius={"1rem"}
+            // outline={"none"}
+            cursor={"pointer"}
+          >
+            <option value="" style={{ color: "gray" }}>
+              See by year
+            </option>
+            <option value="desc" style={{ color: "black" }}>
+              New to old
+            </option>
+            <option value="asc" style={{ color: "black" }}>
+              Old to new
+            </option>
+          </Select>
+        </Box>
+      </Center>
       {/* <VStack spacing="4" > */}
       <Flex justifyContent="space-evenly" gap={"10px"} flexWrap={"wrap"}>
         {/* <Center>

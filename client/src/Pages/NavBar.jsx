@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import Swal from "sweetalert2";
 import { AuthContext } from "../Context/AuthContext";
+import { Input } from "@chakra-ui/react";
 
 const Navbar = () => {
   let token = localStorage.getItem("token");
@@ -34,6 +35,9 @@ const Navbar = () => {
         />
       </StyledLogo>
 
+      <Input w="500px" placeholder="Search" />
+
+
       <StyledLinks>
         {<StyledLink to="/movies">Home</StyledLink>}
         {<StyledLink to="/movie/add">Add Movie</StyledLink>}
@@ -53,6 +57,7 @@ const Navbar = () => {
 const StyledNavbar = styled.div`
   display: flex;
   /* align-items: center; */
+ 
   overflow: hidden;
   justify-content: space-between;
   position: sticky;
