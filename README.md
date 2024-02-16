@@ -19,5 +19,7 @@
 | `Project Highlights` |
 | :------------------: |
 
-<img src= "https://github.com/PragatiS11/reactPracticeProject/blob/main/image/propftx1.png?raw=true" alt= "image"/>
-<img src="https://github.com/PragatiS11/reactPracticeProject/blob/main/image/propftx2.png?raw=true" alt="image"/>
+![Screenshot 2024-02-16 172300](https://github.com/ak8459/propftx-assignment/assets/87300147/52f1a3b1-ae1f-4901-9faf-ac55aef79804)
+![Screenshot 2024-02-16 172317](https://github.com/ak8459/propftx-assignment/assets/87300147/f1e51e12-24cb-4a43-a9e0-06a65f4bb21a)
+![Screenshot 2024-02-16 172404](https://github.com/ak8459/propftx-assignment/assets/87300147/55793d4d-8758-4908-8d10-7bdc5047ebb4)
+
