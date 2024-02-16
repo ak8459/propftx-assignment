@@ -18,14 +18,6 @@ const EditMovie = () => {
     const fetchData = async () => {
       try {
         const response = await axiosApi(`/movie/${id}`, "get");
-        axios.get(
-          `https://movie-server-mu.vercel.app/movie/${id}`,
-          {
-            headers: {
-              Authorization: `Bearer ${token}`,
-            },
-          }
-        );
 
         setTitle(response.data.title);
         setYear(response.data.year);
@@ -73,32 +65,32 @@ const EditMovie = () => {
   }
 
 
-    
 
-return (
-  <Container>
-    <h2 className="edit-heading ">Edit Movie</h2>
-    <Input
-      type="text"
-      value={title}
-      onChange={(e) => setTitle(e.target.value)}
-      placeholder="Title"
-    />
-    <Input
-      type="number"
-      value={year}
-      onChange={(e) => setYear(+e.target.value)}
-      placeholder="Year"
-    />
-    <Input
-      type="text"
-      value={image}
-      onChange={(e) => setImage(e.target.value)}
-      placeholder="Poster"
-    />
-    <Button onClick={handleUpdate}>Update</Button>
-  </Container>
-);
+
+  return (
+    <Container>
+      <h2 className="edit-heading ">Edit Movie</h2>
+      <Input
+        type="text"
+        value={title}
+        onChange={(e) => setTitle(e.target.value)}
+        placeholder="Title"
+      />
+      <Input
+        type="number"
+        value={year}
+        onChange={(e) => setYear(+e.target.value)}
+        placeholder="Year"
+      />
+      <Input
+        type="text"
+        value={image}
+        onChange={(e) => setImage(e.target.value)}
+        placeholder="Poster"
+      />
+      <Button onClick={handleUpdate}>Update</Button>
+    </Container>
+  );
 };
 
 const Container = styled.div`
