@@ -58,16 +58,17 @@ const Navbar = () => {
 };
 
 const StyledNavbar = styled.div`
-  display: flex;
+ display: flex;
   overflow: hidden;
   justify-content: space-between;
   position: sticky;
-   z-index: 1000;
-  padding: 20px 0 ;
-  position: sticky;
+  top: 0; /* Add this property to make it sticky at the top */
+  z-index: 1000;
+  padding: 20px 0;
   color: #fff;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
   margin-bottom: 50px;
+  background-color: white;
 
   @media (min-width: 768px) {
     flex-direction: row;
