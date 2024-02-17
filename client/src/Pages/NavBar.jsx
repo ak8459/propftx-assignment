@@ -35,7 +35,10 @@ const Navbar = () => {
         />
       </StyledLogo>
 
-      <Input w="500px" placeholder="Search" />
+      <Input w="500px"
+        focusBorderColor={"black.300"}
+        _placeholder={{ opacity: 1, color: 'black' }}
+        color={"red"} type="text" size={"md"} placeholder="Search" />
 
 
       <StyledLinks>
@@ -56,12 +59,10 @@ const Navbar = () => {
 
 const StyledNavbar = styled.div`
   display: flex;
-  /* align-items: center; */
- 
   overflow: hidden;
   justify-content: space-between;
   position: sticky;
-  top: 0;
+   z-index: 1000;
   padding: 20px 0 ;
   position: sticky;
   color: #fff;

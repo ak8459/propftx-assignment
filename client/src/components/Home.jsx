@@ -83,8 +83,6 @@ const Home = () => {
   return (
     <Box overflowX="auto">
       <Center>
-
-
         <Box >
           <Select
             onChange={(e) => setOrder(e.target.value)}
